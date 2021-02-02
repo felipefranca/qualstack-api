@@ -1,0 +1,22 @@
+version: '3'
+services:
+  database:
+    image: postgres:11.4
+    container_name: pg11_springboot_qualstack
+    restart: always
+    environment:
+      POSTGRES_DB: qualstack
+      POSTGRES_PASSWORD: qualstack
+      POSTGRES_USER: qualstack
+    volumes: 
+      - data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    networks: 
+      - backend
+
+volumes:
+  data:
+
+networks: 
+  backend:
