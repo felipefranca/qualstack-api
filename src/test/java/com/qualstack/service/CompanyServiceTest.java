@@ -10,7 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 
-import com.qualsctack.model.Company;
+import com.qualstack.model.Company;
 import com.qualstack.repository.CompanyRepository;
 
 @SpringBootTest(classes = Company.class)

@@ -2,10 +2,9 @@ package com.qualstack.service;
 
 import java.util.List;
 
-import com.qualsctack.model.Company;
-
+import com.qualstack.model.Company;
 
 public interface CompanyService {
-	public Company save(Company company);
-	public List<Company> listAll();
+	Company save(Company company);
+	List<Company> listAll();
 }
